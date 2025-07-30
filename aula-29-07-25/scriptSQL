@@ -1,0 +1,12 @@
+CREATE TABLE clientes(
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(100),
+cidade VARCHAR(100)
+);
+INSERT INTO clientes (nome, cidade) VALUES 
+('Lucas', 'Guarulhos'),
+('Maria', 'Belém'),
+('Paulo', 'Rio de Janeiro'),
+('Luiza', 'São Paulo');
+
+CALL PROC_LISTAR_CLIENTES ();
